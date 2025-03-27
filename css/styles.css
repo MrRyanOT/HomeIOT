@@ -1,0 +1,113 @@
+/* Custom styles for futuristic elements */
+.futuristic-switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 24px;
+}
+
+.futuristic-switch.small {
+    width: 40px;
+    height: 20px;
+}
+
+.futuristic-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: .4s;
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.switch-handle {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 4px;
+    bottom: 4px;
+    border-radius: 50%;
+    transition: .4s;
+    box-shadow: 0 0 4px rgba(0,0,0,0.3);
+}
+
+.futuristic-switch.small .switch-handle {
+    height: 12px;
+    width: 12px;
+    left: 4px;
+    bottom: 4px;
+}
+
+input:checked + .slider .switch-handle {
+    transform: translateX(26px);
+}
+
+input:checked + .slider {
+    box-shadow: 0 0 5px rgba(0, 242, 255, 0.5);
+}
+
+.futuristic-switch.small input:checked + .slider .switch-handle {
+    transform: translateX(20px);
+}
+
+.pulse {
+    animation: pulse-animation 2s infinite;
+}
+
+@keyframes pulse-animation {
+    0% { box-shadow: 0 0 0 0px rgba(0, 255, 143, 0.4); }
+    100% { box-shadow: 0 0 0 8px rgba(0, 255, 143, 0); }
+}
+
+.alert-pulse {
+    animation: alert-pulse 3s infinite;
+}
+
+@keyframes alert-pulse {
+    0% { box-shadow: 0 0 5px 0px rgba(255, 0, 242, 0); }
+    50% { box-shadow: 0 0 5px 3px rgba(255, 0, 242, 0.3); }
+    100% { box-shadow: 0 0 5px 0px rgba(255, 0, 242, 0); }
+}
+
+.scene-button {
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 12px;
+    font-family: 'Orbitron', sans-serif;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.scene-button:hover {
+    box-shadow: 0 0 10px currentColor;
+    transform: translateY(-1px);
+}
+
+.command-button {
+    padding: 6px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-family: 'Orbitron', sans-serif;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.appliance-card:hover {
+    box-shadow: 0 0 10px rgba(255, 123, 0, 0.1);
+}
+
+.security-status:hover {
+    box-shadow: 0 0 10px rgba(255, 0, 242, 0.1);
+}
