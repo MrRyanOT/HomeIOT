@@ -4,7 +4,7 @@
 ![HomeIOT-dark](https://github.com/user-attachments/assets/7c76e22d-cd11-4f1a-a30c-dac9dc8dedee)
 ![HomeIOT-Future](https://github.com/user-attachments/assets/58e89837-6848-4be9-8bd6-f5a0d84858cf)
 
-*Screenshot of the dashboard in light and dark modes*  
+*Screenshot of the dashboard*  
 
 ## Overview  
 
@@ -58,9 +58,3 @@ A responsive, modern dashboard for monitoring and controlling your smart home de
 - [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS framework  
 - [Font Awesome](https://fontawesome.com/) - Icon library  
 - JavaScript - For interactive elements and dark mode toggle  
-
-## Installation  
-
-```bash
-git clone https://github.com/yourusername/smart-home-dashboard.git
-cd smart-home-dashboard
